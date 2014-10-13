@@ -1,14 +1,10 @@
 <?php
 
-namespace Qualidade;
-
-class Processos
+class Qualidade_Processos
 {
 
-   private $id;
-   
-    public function __construct($id)
+    public function processo1()
     {
-        $this->id = $id;
+        
     }
 }
