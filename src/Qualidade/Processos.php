@@ -5,11 +5,9 @@ namespace Qualidade;
 class Processos
 {
 
-    private $codigo;
-    
-    public function processo1($id)
+    public function processo1($variavel1, $nomeDoUltimoAtributoDoMetodo)
     {
-        $this->codigo = $id;
+        return $variavel1 * $nomeDoUltimoAtributoDoMetodo;
     }
     
 }
