@@ -2,14 +2,29 @@
 
 namespace Qualidade;
 
+/**
+ * Classe que realiza processos básicos.
+ */
 class Processos
 {
 
-    private $codigo;
-    
-    public function processo1($id)
+    /**
+     * Executa processo 1.
+     */
+    public function processo1()
     {
-        $this->codigo = $id;
+        
+    }
+    
+    /**
+     * Executa processo 2.
+     * 
+     * @param int $var1
+     * @param int $var2
+     */
+    public function processo2($var1, $var2)
+    {
+        
     }
     
 }
