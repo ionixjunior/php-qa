@@ -2,17 +2,9 @@
 
 namespace Qualidade;
 
-class Processos
-{
+class Processos {
 
-    public function processo1($variavel1, $variavel2)
-    {
+    public function processo1($variavel1, $variavel2) {
         return $variavel1 * $variavel2;
     }
-    
-    private function processo2()
-    {
-        
-    }
-    
 }
