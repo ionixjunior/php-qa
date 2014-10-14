@@ -13,7 +13,21 @@ class Pessoa
     
     public function getNomeCompleto()
     {
-        return sprintf('%s %s %s', $this->getNome(), $this->getSobrenome(), $this->getUltimoNome());
+        $nomeCompleto = '';
+        
+        if (empty($this->getNome()) === false) {
+            $nomeCompleto .= $this->getNome() . ' ';
+        }
+        
+        if (empty($this->getSobrenome()) === false) {
+            $nomeCompleto .= $this->getSobrenome() . ' ';
+        }
+        
+        if (empty($this->getUltimoNome()) === false) {
+            $nomeCompleto .= $this->getUltimoNome() . ' ';
+        }
+        
+        return trim($nomeCompleto);
     }
     
     public function getNome()
