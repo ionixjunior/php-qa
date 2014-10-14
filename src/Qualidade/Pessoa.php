@@ -9,9 +9,11 @@ class Pessoa
     
     private $sobrenome;
     
+    private $ultimoNome;
+    
     public function getNomeCompleto()
     {
-        return sprintf('%s %s', $this->getNome(), $this->getSobrenome());
+        return sprintf('%s %s %s', $this->getNome(), $this->getSobrenome(), $this->getUltimoNome());
     }
     
     public function getNome()
@@ -23,6 +25,11 @@ class Pessoa
     {
         return $this->sobrenome;
     }
+    
+    public function getUltimoNome()
+    {
+        
+    }
 
     public function setNome($nome)
     {
@@ -32,6 +39,11 @@ class Pessoa
     public function setSobrenome($sobrenome)
     {
         $this->sobrenome = $sobrenome;
+    }
+    
+    public function setUltimoNome($ultimoNome)
+    {
+        $this->ultimoNome = $ultimoNome;
     }
 
 }
