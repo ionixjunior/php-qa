@@ -42,7 +42,7 @@ class Pessoa
     
     public function getUltimoNome()
     {
-        
+        return $this->ultimoNome;
     }
 
     public function setNome($nome)
