@@ -24,8 +24,9 @@ class PessoaTest extends PHPUnit_Framework_TestCase
     {
         $this->pessoa->setNome('Ione');
         $this->pessoa->setSobrenome('Souza');
+        $this->pessoa->setUltimoNome('Junior');
         
-        $this->assertEquals('Ione Souza', $this->pessoa->getNomeCompleto());
+        $this->assertEquals('Ione Souza Junior', $this->pessoa->getNomeCompleto());
     }
     
 }
